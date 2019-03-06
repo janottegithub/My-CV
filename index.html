@@ -3,17 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="" rel="stylesheet" type="text/css">
+        
         <style>
-            body{background-color:lightgrey;}
-            .vieuw{width:100%;
-                display:grid;
-                grid-template-columns:15% 70% 15%;
-                grid-template-rows: 15% 80% 5%;
+            body{background-color:dimgrey;
+            margin:90px;}
+            .main{
+                
+                
                    }
-            .box{width:100%;
+            .box{
                   grid-column-start: 2;
+                  grid-column-end: 4;
                   grid-row-start: 2;
+                  grid-row-end: 3;
                   background-color:whitesmoke;
                   border-radius: 15px;
                   padding:15px;
@@ -21,28 +25,108 @@
                   -moz-box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
                   box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
                   }
-            h1{margin-left:40px;}
-            .content{
-                grid-template-columns:15% 70% 15%;
-                margin:20px;
-                padding: 20px;
+            h1{margin-left:40px;display:inline;color:darkblue;}
+            
+            .container{
+                padding: 5px;
                 background-color:white;
                 border-radius: 5px;
+                display:grid;grid-template-columns: 25% 75% ;
+                grid-template-rows: 5% auto 5%;  
                 
-            }
+                    
+                    }
+            #left{
+                  grid-column-start:1;
+                  grid-column-end:2;
+                  grid-row-start:2;
+                  grid-row-end: 3;
+                  background-color:dimgrey ;
+                  color:white;
+                    }
+            #right{
+                  grid-column-start:2;
+                  grid-column-end:4;
+                  grid-row-start:2;
+                  grid-row-end: 3;
+                  padding:15px;
+                  padding-left:50px;
+                    }
+            h2{font:uppercase;background-color: slategrey;}
+            h4{border:solid;border-width: thin;}
         </style>
     </head>
     <body>
-        <div class="vieuw">
+        <div class="main">
             <div class="box">
                   <h1>Resume</h1>
-                <div class="content">
-                    <div  class="left">
-                        <img src="me.jpg" alt="me" height="50px" width="50px">
-                      
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dui in lorem congue malesuada. Morbi nec felis nec leo gravida pretium eget at mauris. Nulla h eget condimentum augue. Mauris sed bibendum tortor, vel vestibulum tortor. Vivamus pretium sollicitudin nunc, tincidunt consectetur risus ieo. Donec sed placerat tortor. Praesent vel risus tempor, dictum sem eleifend, aliquam lacus. Quisque vel eros sed ipsum interdum luctus. Donec sit amet elit ac est vestibulum ornare. Donec convallis nec ante a aliquet. Quisque rutrum lacus risus, ac ornare purus posuere eget. Morbi scelerisque malesuada neque, eget malesuada ipsum placerat vel. Vivamus sollicitudin pharetra urna quis rhoncus.
-                        Integer suscipit pellentesque sem, quis pharetra nisl congue at. Integer at felis ex. Nulla fringilla, nisl quis sollicitudin porta, tortor turpis lacinia que sem, quis pharetra nisl congue at. Integer at felis ex. Nulla fringilla, nisl quis soll faucibus odio sit amet sollicitudin. Vivamus nunc arcu, finibus sed tristique eget, lobortis tincidunt erat. Morbi lorem mauris, porta vitae maximus sed, pretium eget lectus. Ut sagittis pellentesque metus. Nulla tristique sem et arcu hendrerit ullamcorper. Suspendisse potenti. Curabitur eleifend nisl ut sem fringilla aliquet. Nulla ullamcorper nunc et suscipit vulputate.
-                        Curabitur vel rutrum nisl, a pellentesque nisl. Donec vel luctus est. Duis tempor lectus id leo egestas varius. Quisque arcu felis, hendrerit ut tortor laoreet, mollis pharetra erat. Nam quis mollis dui. Curabitur at metus a nulla lacinia scelerisque ut vel nisl. Suspendisse hendrerit elit nec facilisis convallis. Nullam eu nisl scelerisque, cursus mauris ac, tincidunt nulla. Vivamus tincidunt, ex id lobortis pellentesque, nisi urna viverra erat, nec lacinia nisi ipsum in dui. Mauris aliquam metus at efficitur finibus. Mauris eu neque risus. Aliquam et lectus ac tellus aliquet fringilla.
+                <div class="container">
+                    <div  class="item1" id="left">
+                        <img src="me%20copy.jpg" alt="me" height="160px" width="160">
+                        <h2>personel info</h2>
+                        <ul>
+                             <li>
+                                 <i class="fas fa-user"></i>
+                                    Jan Otte
+                            </li>
+                             <li>
+                                 <i class="fas fa-birthday-cake"></i>
+                                 November 4th 1993
+                            </li>
+                             <li>
+                                 <i class="fas fa-map-marker-alt"></i>
+                                 Provinciale Steenweg 48 <br> 2620 Hemiksem
+                            </li>
+                             <li>
+                                 <i class="fas fa-phone"></i>
+                                 0477196474
+                            </li>
+                             <li>
+                                 <i class="fas fa-envelope"></i>
+                                 jan.otte.mailbox@gmail.com
+                            </li>
+                        </ul>
+                         <h2>social media</h2>
+                        <ul>
+                             <li>@usernamer</li>
+                             <li>
+                                 <i class="fab fa-facebook"></i>
+                                 @facebook/usernamer
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin"></i>
+                                @linkedin/usernamer
+                            </li>
+                            <li>
+                                <i class="fab fa-instagram"></i>
+                                @/instausernamer
+                            </li>
+                        </ul>
+                        <h2>Professional Skills</h2>
+                        <ul>
+                             <li>photoshop</li>
+                             <li>illustrator</li>
+                            <li>indesign</li>
+                            <li>html/css</li>
+                            <li>javascript</li>
+                        </ul>
+                    </div>
+                     <div  class="item2" id="right">
+                         <h1>Jan Otte</h1>
+                         <h3>front-end developer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dui in lorem congue malesuada. Morbi nec felis nec leo gravida pretium eget at mauris. Nulla h eget condimentum augue. Mauris sed bibendum tortor, vel vestibulum tortor. Vivamus pretium sollicitudin nunc, tincidunt consectetur risus ieo. Donec sed placerat tortor. Praesent vel risus tempor, dictum sem eleifend, aliquam lacus. Quisque vel eros sed ipsum interdum luctus. Donec sit amet elit ac est vestibulum ornare.</p>
+                         
+                        <h4>Education</h4> 
+                         <p> Donec convallis nec ante a aliquet. Quisque rutrum lacus risus, ac ornare purus posuere eget. Morbi scelerisque malesuada neque, eget malesuada ipsum placerat vel. Vivamus sollicitudin pharetra urna quis rhoncus.
+                         convallis. Nullam eu nisl scelerisque, cursus mauris ac, tincidunt nulla. Vivamus tincidunt, ex id lobortis pellentesque, nisi urna viverra erat, nec lacinia nisi ipsum in dui. Mauris aliquam metus at efficitur finibus. Mauris eu neque risus. Aliquam et lectus ac tellus aliquet fringilla.
+                        </p>
+                         <h4>work experience</h4>
+                         <p> Donec convallis nec ante a aliquet. Quisque rutrum lacus risus, ac ornare purus posuere eget. Morbi scelerisque malesuada neque, eget malesuada ipsum placerat vel. Vivamus sollicitudin pharetra urna quis rhoncus.
+                         convallis. Nullam eu nisl scelerisque, cursus mauris ac, tincidunt nulla. Vivamus tincidunt, ex id lobortis pellentesque, nisi urna viverra erat, nec lacinia nisi ipsum in dui. Mauris aliquam metus at efficitur finibus. Mauris eu neque risus. Aliquam et lectus ac tellus aliquet fringilla.
+                        </p>
+                         <h4>Awards</h4>
+                          <p> Donec convallis nec ante a aliquet. Quisque rutrum lacus risus, ac ornare purus posuere eget. Morbi scelerisque malesuada neque, eget malesuada ipsum placerat vel. Vivamus sollicitudin pharetra urna quis rhoncus.
+                         convallis. Nullam eu nisl scelerisque, cursus mauris ac, tincidunt nulla. Vivamus tincidunt, ex id lobortis pellentesque, nisi urna viverra erat, nec lacinia nisi ipsum in dui. Mauris aliquam metus at efficitur finibus. Mauris eu neque risus. Aliquam et lectus ac tellus aliquet fringilla.
                         </p>
                     </div>
                 </div>
