@@ -1,0 +1,63 @@
+            body{background-color:dimgrey;
+            margin:90px;}
+            .box{
+                  background-color:whitesmoke;
+                  border-radius: 15px;
+                  padding:17px;
+                  -webkit-box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
+                  -moz-box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
+                  box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
+                  }
+            h1{font-family: 'Ubuntu', sans-serif;
+                display:inline;
+                font-size:45px;
+                align-content: center;
+                }
+            .container{
+                padding-right:20px;
+                background-color:white;
+                border-radius: 5px;
+                  -webkit-box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
+                  -moz-box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
+                  box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.75);
+                display:grid;grid-template-columns: 25% 75% ;
+                grid-template-rows: 2% auto 5%;
+                
+                
+                    }
+            #left{
+                  grid-column-start:1;
+                  grid-column-end:2;
+                  grid-row-start:1;
+                  grid-row-end: 3;
+                  background-color:dimgrey ;
+                  color:white;
+                    }
+            #right{
+                  grid-column-start:2;
+                  grid-column-end:4;
+                  grid-row-start:2;
+                  grid-row-end: 3;
+                  padding:15px;
+                  padding-left:50px;
+                 }
+            h2{
+                font:uppercase;
+                background-color:gainsboro;opacity: 0.9;
+                margin-top:5px;
+                margin-bottom:5px;
+                font-family:'Raleway', sans-serif;
+                padding-left:10px;
+                letter-spacing:2;
+                }
+            h3{font-size:22px;margin-bottom:55px;}
+            h4{
+                font-size:20px;
+                border-style: ridge;
+                border-width:thin;
+                }
+            ul{list-style-type: none;margin-left:-5;}
+            li{margin-bottom:12px;font-family: 'Poppins', sans-serif;letter-spacing:2px;font-weight:lighter;}
+            #mail {letter-spacing:none;font-size:14px;margin-left:-10px;}
+            #header{display:grid;justify-content:center;grid-auto-rows:;grid-template-columns:25 41 33}
+            #pic{width: 100%;}
